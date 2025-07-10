@@ -1,0 +1,61 @@
+.about-section {
+  position: relative;
+   min-height: 100vh;
+  background-image: url('https://binyaqoobgroup.com.pk/images/box4.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 30px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.overlay-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px ;
+}
+
+
+.about-content{
+    background-color: rgb(0, 0, 0, 0.6);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+     text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+ padding: 20px 
+
+}
+
+.about-content:hover {
+  transform: translateY(-10px);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.about-content h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.about-content p {
+  font-size: 15px;
+  color: #f0f0f0;
+  line-height: 1.6;
+}

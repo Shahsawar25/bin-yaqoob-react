@@ -1,0 +1,61 @@
+.greeting-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 40px;
+  padding-top: 60px;
+  flex-wrap: wrap;
+}
+
+/* For image container */
+.image-container {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+/* Text styling */
+.greeting-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.greeting-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.span {
+  color: #b87e37; 
+}
+
+.greeting-container > *:not(.image-container) {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .greeting-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .greeting-container h1 {
+    font-size: 2rem;
+  }
+
+  .greeting-container p {
+    font-size: 1rem;
+  }
+}
